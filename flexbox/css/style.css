@@ -1,0 +1,320 @@
+/* Reset CSS */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    border-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    margin-left: 100px;
+}
+
+.menu ul {
+    display: flex;
+    margin-right: 100px;
+}
+
+.menu ul li a {
+    font-size: 1.2rem;
+    color: #191c03;
+    padding: 30px;
+}
+
+/* breakpoint header */
+@media (max-width: 700px) {
+    /* quando a largura da tela chegar a 700px */
+    header{
+        flex-direction: column;
+    }
+    .logo, .menu ul {
+        margin: 0px;
+    }
+    .menu ul {
+        padding: 15px;
+    }
+}
+
+/* Home */
+.home {
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: url('../img/hero.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+.title {
+    font-size: 3.1rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sub-title {
+    font-size: 2rem;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.home .btn{
+    background-color: #fff;
+    color: 191c03;
+    border-radius: 4px;
+    padding: 20px 50px;
+    margin-top: 10px;   
+}
+
+/* breakpoint home */
+@media (max-width: 700px) {
+    .home h1 {
+        font-size: 2.3rem;
+    }
+    .home h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Sobre */
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.sobre .title {
+    font-size: 2rem;
+    color: #191c03;
+    margin-bottom: 35px;
+}
+
+.sobre .sub-title {
+    max-width: 800px;
+    font-size: 1.2rem;
+    color: #191c03;
+    margin-bottom: 35px;
+}
+
+.separador {
+    width: 200px;
+    height: 2px;
+    background-color: #c3c63b;
+    border: none;
+    margin-bottom: 70px;
+}
+
+.list-images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.list-images li {
+    height: 390px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center center;
+}
+
+.small {
+    flex-basis: 35%;
+}
+.large {
+    flex-basis: 55%;
+}
+
+/* breakpoint Sobre */
+@media (max-width: 700px) {
+    .small, .large {
+        flex-basis: 100%;
+    }
+}
+
+.caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #191c03;
+    color: white;
+    padding: 100px 50px;
+}
+
+.caracteristicas .title {
+    font-size: 2rem;
+}
+
+.caracteristicas .sub-title {
+    max-width: 900px;
+    text-align: center;
+    font-size: 1.2rem;  
+}
+
+.caracteristicas .title, .caracteristicas .sub-title {
+    color:white;
+    margin-bottom: 40px;
+}
+
+.caracteristicas .separador {
+    background-color: white;
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid li {
+    padding: 0 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid li i {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+
+.grid li h4 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/*Breakpoint Caracteristicas */
+@media (max-width: 700px) {
+    .grid {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+}
+
+/* Newsletter */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.newsletter .title {
+    color: #c3c63b;
+    margin-bottom: 30px;
+}
+
+.newsletter .sub-title {
+    max-width: 800px;
+    font-size: 1.5rem;
+    color: #191c03;
+    margin-bottom: 40px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+}
+
+.newsletter form input {
+    flex: 1;
+    border: solid 1px #c3c63b;
+    border-radius: 4px;
+    padding: 15px;
+    margin-right: 15px;
+}
+
+.newsletter form button {
+    background-color: #c3c63b;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 15px;
+}
+
+/* Breakpoint newsletter */
+@media (max-width: 750px) {
+    .newsletter form input {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #191c03;
+    padding: 100px 50px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+footer div a {
+    font-size: 2.3rem;
+    color: #c3c63b;
+    margin-right: 25px;
+}
+footer div:last-child {
+    margin-right: 0;
+}
+
+footer p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #c3c63b;
+    text-align: center;
+}
+
+
