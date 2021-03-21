@@ -1,2 +1,2 @@
-# curso-flexbox
-Curso do canal - "Node Studio Treinamentos"
+# Flexbox
+NodeStudio Treinamentos
